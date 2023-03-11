@@ -40,6 +40,8 @@ const earcount = data.earnings.reduce((sum, item) =>
 const dedcount = data.deductions.reduce((sum, item) => {
     return sum += item.amount;
 }, 0);
-console.log("earCount", earcount);
-console.log("dedcount", dedcount);
+const totalAmount = earcount - dedcount;
+console.log("earningAmount", earcount);
+console.log("deductionAmount", dedcount);
+console.log("totalAmount", totalAmount);
 
